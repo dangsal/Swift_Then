@@ -18,6 +18,10 @@ final class ViewController: UIViewController {
         $0.text = "text"
         $0.textColor = .red
     }
+    
+    private let myView: MyView = MyView().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+    }
 
     // MARK: - life cycle
     
@@ -33,6 +37,11 @@ final class ViewController: UIViewController {
         self.titleLabel.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
         self.titleLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         
+        self.view.addSubview(self.myView)
+        self.myView.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 50).isActive = true
+        self.myView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        self.myView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        self.myView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 
 }
