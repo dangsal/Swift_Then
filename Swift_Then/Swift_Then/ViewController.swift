@@ -28,6 +28,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupLayout()
+        self.setupDelegation()
     }
 
     // MARK: - func
@@ -43,6 +44,14 @@ final class ViewController: UIViewController {
         self.myView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         self.myView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
-
+    
+    private func setupDelegation() {
+        self.myView.delegate = self
+    }
 }
 
+extension ViewController: MyViewDelegate {
+    func changeTextButtonDidTap() {
+        self.titleLabel.text = "changed!!"
+    }
+}
