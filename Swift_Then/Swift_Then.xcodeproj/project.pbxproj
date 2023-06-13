@@ -17,6 +17,7 @@
 		D7C8CFD92A382F6D00AA76E8 /* Swift_ThenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8CFD82A382F6D00AA76E8 /* Swift_ThenUITests.swift */; };
 		D7C8CFDB2A382F6D00AA76E8 /* Swift_ThenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8CFDA2A382F6D00AA76E8 /* Swift_ThenUITestsLaunchTests.swift */; };
 		D7C8CFE92A3831B700AA76E8 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D7C8CFE82A3831B700AA76E8 /* Then */; };
+		D7C8CFEC2A38340200AA76E8 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8CFEB2A38340200AA76E8 /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		D7C8CFD42A382F6D00AA76E8 /* Swift_ThenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_ThenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C8CFD82A382F6D00AA76E8 /* Swift_ThenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_ThenUITests.swift; sourceTree = "<group>"; };
 		D7C8CFDA2A382F6D00AA76E8 /* Swift_ThenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_ThenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D7C8CFEB2A38340200AA76E8 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +103,9 @@
 		D7C8CFB62A382F6D00AA76E8 /* Swift_Then */ = {
 			isa = PBXGroup;
 			children = (
-				D7C8CFB72A382F6D00AA76E8 /* AppDelegate.swift */,
-				D7C8CFB92A382F6D00AA76E8 /* SceneDelegate.swift */,
+				D7C8CFEA2A3833EF00AA76E8 /* SupportingFiles */,
 				D7C8CFBB2A382F6D00AA76E8 /* ViewController.swift */,
-				D7C8CFBD2A382F6D00AA76E8 /* Main.storyboard */,
-				D7C8CFC02A382F6D00AA76E8 /* Assets.xcassets */,
-				D7C8CFC22A382F6D00AA76E8 /* LaunchScreen.storyboard */,
+				D7C8CFEB2A38340200AA76E8 /* MyView.swift */,
 				D7C8CFC52A382F6D00AA76E8 /* Info.plist */,
 			);
 			path = Swift_Then;
@@ -127,6 +126,18 @@
 				D7C8CFDA2A382F6D00AA76E8 /* Swift_ThenUITestsLaunchTests.swift */,
 			);
 			path = Swift_ThenUITests;
+			sourceTree = "<group>";
+		};
+		D7C8CFEA2A3833EF00AA76E8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D7C8CFB72A382F6D00AA76E8 /* AppDelegate.swift */,
+				D7C8CFB92A382F6D00AA76E8 /* SceneDelegate.swift */,
+				D7C8CFBD2A382F6D00AA76E8 /* Main.storyboard */,
+				D7C8CFC02A382F6D00AA76E8 /* Assets.xcassets */,
+				D7C8CFC22A382F6D00AA76E8 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C8CFEC2A38340200AA76E8 /* MyView.swift in Sources */,
 				D7C8CFBC2A382F6D00AA76E8 /* ViewController.swift in Sources */,
 				D7C8CFB82A382F6D00AA76E8 /* AppDelegate.swift in Sources */,
 				D7C8CFBA2A382F6D00AA76E8 /* SceneDelegate.swift in Sources */,

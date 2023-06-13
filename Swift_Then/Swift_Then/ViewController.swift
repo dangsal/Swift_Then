@@ -7,13 +7,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import Then
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+final class ViewController: UIViewController {
+    
+    // MARK: - ui component
+    
+    private let titleLabel = UILabel().then {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.text = "text"
+        $0.textColor = .red
     }
 
+    // MARK: - life cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setupLayout()
+    }
+
+    // MARK: - func
+    
+    private func setupLayout() {
+        self.view.addSubview(self.titleLabel)
+        self.titleLabel.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
+        self.titleLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        
+    }
 
 }
 
